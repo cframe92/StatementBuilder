@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.corelationinc.com/ns/statementProduction/v1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="statementProduction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="prologue">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="institutionId" type="xs:unsignedShort" />
+              <xs:element name="institutionName" type="xs:string" />
+              <xs:element name="databaseName" type="xs:string" />
+              <xs:element name="productionDate" type="xs:date" />
+              <xs:element name="productionTime" type="xs:string" />
+              <xs:element name="statementEndingDate" type="xs:date" />
+            </xs:sequence>
+            <xs:attribute name="type" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element maxOccurs="unbounded" name="envelope">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="person">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="serial" type="xs:unsignedInt" />
+                    <xs:element minOccurs="0" name="firstName" type="xs:string" />
+                    <xs:element minOccurs="0" name="middleName" type="xs:string" />
+                    <xs:element name="lastName" type="xs:string" />
+                    <xs:element minOccurs="0" name="suffix" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="type" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="address">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="addressSerial" type="xs:unsignedInt" />
+                    <xs:element name="category">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="option" type="xs:string" use="required" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="street" type="xs:string" />
+                    <xs:element name="city" type="xs:string" />
+                    <xs:element name="state" type="xs:string" />
+                    <xs:element minOccurs="0" name="postalCode" type="xs:unsignedShort" />
+                  </xs:sequence>
+                  <xs:attribute name="type" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="statement">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="beginningStatementDate" type="xs:date" />
+                    <xs:element name="endingStatementDate" type="xs:date" />
+                    <xs:element name="account">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="serial" type="xs:unsignedInt" />
+                          <xs:element name="accountNumber" type="xs:unsignedInt" />
+                          <xs:element name="typeSerial" type="xs:unsignedByte" />
+                          <xs:element name="typeDescription" type="xs:string" />
+                          <xs:element name="relationshipSerial" type="xs:unsignedByte" />
+                          <xs:element name="relationshipDescription" type="xs:string" />
+                          <xs:element name="eStatementOption">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute name="option" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="eStatementNotification">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute name="option" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="eStatementEmailAddress" type="xs:string" />
+                          <xs:element name="openDate" type="xs:date" />
+                          <xs:element name="person">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="serial" type="xs:unsignedInt" />
+                                <xs:element name="personLinkCategory">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute name="option" type="xs:string" use="required" />
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element minOccurs="0" name="firstName" type="xs:string" />
+                                <xs:element minOccurs="0" name="middleName" type="xs:string" />
+                                <xs:element name="lastName" type="xs:string" />
+                                <xs:element minOccurs="0" name="suffix" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element maxOccurs="unbounded" name="subAccount">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="loan">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="serial" type="xs:unsignedInt" />
+                                      <xs:element name="id" type="xs:unsignedByte" />
+                                      <xs:element name="description" type="xs:string" />
+                                      <xs:element name="category">
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute name="option" type="xs:string" use="required" />
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="typeSerial" type="xs:unsignedByte" />
+                                      <xs:element name="typeDescription" type="xs:string" />
+                                      <xs:element name="branchSerial" type="xs:unsignedByte" />
+                                      <xs:element name="branchDescription" type="xs:string" />
+                                      <xs:element name="statementMailGroupSerial" type="xs:unsignedShort" />
+                                      <xs:element name="statementMailGroupDescription" type="xs:string" />
+                                      <xs:element name="openDate" type="xs:date" />
+                                      <xs:element minOccurs="0" name="maturityDate" type="xs:date" />
+                                      <xs:element name="statementFormat">
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute name="option" type="xs:string" use="required" />
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="balanceComputationMethod">
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute name="option" type="xs:string" use="required" />
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="beginningStatementDate" type="xs:date" />
+                                      <xs:element name="endingStatementDate" type="xs:date" />
+                                      <xs:element name="beginning">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="balance" type="xs:decimal" />
+                                            <xs:element name="annualRate" type="xs:decimal" />
+                                            <xs:element name="dailyPeriodicRate" type="xs:decimal" />
+                                            <xs:element name="variableRateOption">
+                                              <xs:complexType>
+                                                <xs:simpleContent>
+                                                  <xs:extension base="xs:string">
+                                                    <xs:attribute name="option" type="xs:string" use="required" />
+                                                  </xs:extension>
+                                                </xs:simpleContent>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute name="type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element maxOccurs="unbounded" name="transaction">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:choice maxOccurs="unbounded">
+                                              <xs:element name="transactionSerial" type="xs:unsignedInt" />
+                                              <xs:element name="monetarySerial" type="xs:unsignedInt" />
+                                              <xs:element name="postingDate" type="xs:date" />
+                                              <xs:element name="category">
+                                                <xs:complexType>
+                                                  <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                      <xs:attribute name="option" type="xs:string" use="required" />
+                                                    </xs:extension>
+                                                  </xs:simpleContent>
+                                                </xs:complexType>
+                                              </xs:element>
+                                              <xs:element name="source">
+                                                <xs:complexType>
+                                                  <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                      <xs:attribute name="option" type="xs:string" use="required" />
+                                                    </xs:extension>
+                                                  </xs:simpleContent>
+                                                </xs:complexType>
+                                              </xs:element>
+                                              <xs:element name="transferOption">
+                                                <xs:complexType>
+                                                  <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                      <xs:attribute name="option" type="xs:string" use="required" />
+                                                    </xs:extension>
+                                                  </xs:simpleContent>
+                                                </xs:complexType>
+                                              </xs:element>
+                                              <xs:element name="grossAmount" type="xs:decimal" />
+                                              <xs:element name="principal" type="xs:decimal" />
+                                              <xs:element name="interest" type="xs:decimal" />
+                                              <xs:element name="lateFee" type="xs:decimal" />
+                                              <xs:element name="description" type="xs:string" />
+                                              <xs:element name="newBalance" type="xs:decimal" />
+                                              <xs:element name="transferIdCategory" type="xs:string" />
+                                              <xs:element name="transferId" type="xs:unsignedByte" />
+                                            </xs:choice>
+                                          </xs:sequence>
+                                          <xs:attribute name="type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element minOccurs="0" name="feeTransaction">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="openEndLoanFeeIndicator">
+                                              <xs:complexType>
+                                                <xs:simpleContent>
+                                                  <xs:extension base="xs:string">
+                                                    <xs:attribute name="option" type="xs:string" use="required" />
+                                                  </xs:extension>
+                                                </xs:simpleContent>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="transactionSerial" type="xs:unsignedInt" />
+                                            <xs:element name="monetarySerial" type="xs:unsignedInt" />
+                                            <xs:element name="postingDate" type="xs:date" />
+                                            <xs:element name="category">
+                                              <xs:complexType>
+                                                <xs:simpleContent>
+                                                  <xs:extension base="xs:string">
+                                                    <xs:attribute name="option" type="xs:string" use="required" />
+                                                  </xs:extension>
+                                                </xs:simpleContent>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="source">
+                                              <xs:complexType>
+                                                <xs:simpleContent>
+                                                  <xs:extension base="xs:string">
+                                                    <xs:attribute name="option" type="xs:string" use="required" />
+                                                  </xs:extension>
+                                                </xs:simpleContent>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="description" type="xs:string" />
+                                            <xs:element name="grossAmount" type="xs:decimal" />
+                                            <xs:element name="lateFee" type="xs:decimal" />
+                                            <xs:element name="newBalance" type="xs:decimal" />
+                                          </xs:sequence>
+                                          <xs:attribute name="type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element minOccurs="0" name="interestCharge">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="transactionSerial" type="xs:unsignedInt" />
+                                            <xs:element name="monetarySerial" type="xs:unsignedInt" />
+                                            <xs:element name="postingDate" type="xs:date" />
+                                            <xs:element name="interest" type="xs:decimal" />
+                                          </xs:sequence>
+                                          <xs:attribute name="type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="ending">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="balance" type="xs:decimal" />
+                                            <xs:element name="annualRate" type="xs:decimal" />
+                                            <xs:element name="dailyPeriodicRate" type="xs:decimal" />
+                                            <xs:element name="variableRateOption">
+                                              <xs:complexType>
+                                                <xs:simpleContent>
+                                                  <xs:extension base="xs:string">
+                                                    <xs:attribute name="option" type="xs:string" use="required" />
+                                                  </xs:extension>
+                                                </xs:simpleContent>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute name="type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element minOccurs="0" name="interestChargedPeriod" type="xs:decimal" />
+                                      <xs:element name="interestChargedYTD" type="xs:decimal" />
+                                      <xs:element minOccurs="0" name="interestChargedLastYear" type="xs:decimal" />
+                                      <xs:element minOccurs="0" name="loanFeesChargedPeriod" type="xs:decimal" />
+                                      <xs:element name="loanFeesChargedYTD" type="xs:decimal" />
+                                      <xs:element name="interestYTD" type="xs:decimal" />
+                                      <xs:element minOccurs="0" name="interestLastYear" type="xs:decimal" />
+                                      <xs:element name="endingDueDate" type="xs:date" />
+                                      <xs:element name="endingDuePayment" type="xs:decimal" />
+                                      <xs:element minOccurs="0" name="endingDuePaymentPartialApplied" type="xs:decimal" />
+                                      <xs:element minOccurs="0" name="pastDueDate" type="xs:date" />
+                                      <xs:element minOccurs="0" name="pastDuePayment" type="xs:decimal" />
+                                      <xs:element minOccurs="0" name="pastDuePaymentCount" type="xs:unsignedByte" />
+                                      <xs:element name="nextScheduledDueDate" type="xs:date" />
+                                      <xs:element name="nextScheduledDuePayment" type="xs:decimal" />
+                                      <xs:element name="nextScheduledDueInterest" type="xs:decimal" />
+                                      <xs:element minOccurs="0" name="nextScheduledDueLateFee" type="xs:decimal" />
+                                      <xs:element name="nextScheduledDuePayoff" type="xs:decimal" />
+                                      <xs:element name="nextScheduledStandardPayment" type="xs:decimal" />
+                                      <xs:element name="daysInBillingCycle" type="xs:unsignedByte" />
+                                    </xs:sequence>
+                                    <xs:attribute name="type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element minOccurs="0" name="share">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="serial" type="xs:unsignedInt" />
+                                      <xs:element name="id" type="xs:unsignedByte" />
+                                      <xs:element name="description" type="xs:string" />
+                                      <xs:element name="category">
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute name="option" type="xs:string" use="required" />
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="regDLimiting">
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute name="option" type="xs:string" use="required" />
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="typeSerial" type="xs:unsignedByte" />
+                                      <xs:element name="typeDescription" type="xs:string" />
+                                      <xs:element name="branchSerial" type="xs:unsignedByte" />
+                                      <xs:element name="branchDescription" type="xs:string" />
+                                      <xs:element name="statementMailGroupSerial" type="xs:unsignedShort" />
+                                      <xs:element name="statementMailGroupDescription" type="xs:string" />
+                                      <xs:element name="openDate" type="xs:date" />
+                                      <xs:element minOccurs="0" name="closeDate" type="xs:date" />
+                                      <xs:element minOccurs="0" name="maturityDate" type="xs:date" />
+                                      <xs:element minOccurs="0" name="person">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="serial" type="xs:unsignedInt" />
+                                            <xs:element name="personLinkCategory">
+                                              <xs:complexType>
+                                                <xs:simpleContent>
+                                                  <xs:extension base="xs:string">
+                                                    <xs:attribute name="option" type="xs:string" use="required" />
+                                                  </xs:extension>
+                                                </xs:simpleContent>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="firstName" type="xs:string" />
+                                            <xs:element name="middleName" type="xs:string" />
+                                            <xs:element name="lastName" type="xs:string" />
+                                          </xs:sequence>
+                                          <xs:attribute name="type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="beginningStatementDate" type="xs:date" />
+                                      <xs:element name="endingStatementDate" type="xs:date" />
+                                      <xs:element name="beginning">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="balance" type="xs:decimal" />
+                                          </xs:sequence>
+                                          <xs:attribute name="type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element minOccurs="0" maxOccurs="unbounded" name="transaction">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:choice maxOccurs="unbounded">
+                                              <xs:element name="transactionSerial" type="xs:unsignedInt" />
+                                              <xs:element name="monetarySerial" type="xs:unsignedInt" />
+                                              <xs:element name="postingDate" type="xs:date" />
+                                              <xs:element name="category">
+                                                <xs:complexType>
+                                                  <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                      <xs:attribute name="option" type="xs:string" use="required" />
+                                                    </xs:extension>
+                                                  </xs:simpleContent>
+                                                </xs:complexType>
+                                              </xs:element>
+                                              <xs:element name="description" type="xs:string" />
+                                              <xs:element name="source">
+                                                <xs:complexType>
+                                                  <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                      <xs:attribute name="option" type="xs:string" use="required" />
+                                                    </xs:extension>
+                                                  </xs:simpleContent>
+                                                </xs:complexType>
+                                              </xs:element>
+                                              <xs:element name="transferOption">
+                                                <xs:complexType>
+                                                  <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                      <xs:attribute name="option" type="xs:string" use="required" />
+                                                    </xs:extension>
+                                                  </xs:simpleContent>
+                                                </xs:complexType>
+                                              </xs:element>
+                                              <xs:element name="grossAmount" type="xs:decimal" />
+                                              <xs:element name="principal" type="xs:decimal" />
+                                              <xs:element name="newBalance" type="xs:decimal" />
+                                              <xs:element name="transferIdCategory" type="xs:string" />
+                                              <xs:element name="transferId" type="xs:unsignedByte" />
+                                              <xs:element name="apyeRate" type="xs:decimal" />
+                                              <xs:element name="apyeAverageBalance" type="xs:decimal" />
+                                              <xs:element name="apyePeriodStartDate" type="xs:date" />
+                                              <xs:element name="apyePeriodEndDate" type="xs:date" />
+                                              <xs:element name="draftNumber" type="xs:unsignedByte" />
+                                              <xs:element name="draftTracer" type="xs:unsignedInt" />
+                                              <xs:element name="routingNumber" type="xs:unsignedInt" />
+                                              <xs:element name="accountNumber" type="xs:unsignedLong" />
+                                              <xs:element name="terminalLocation" type="xs:string" />
+                                              <xs:element name="terminalId" type="xs:string" />
+                                              <xs:element name="terminalCity" type="xs:string" />
+                                              <xs:element name="terminalState" type="xs:string" />
+                                              <xs:element name="merchantName" type="xs:string" />
+                                              <xs:element name="merchantType" type="xs:unsignedShort" />
+                                              <xs:element name="transactionReference" type="xs:unsignedLong" />
+                                              <xs:element name="transactionDate" type="xs:date" />
+                                              <xs:element name="subCategory">
+                                                <xs:complexType>
+                                                  <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                      <xs:attribute name="option" type="xs:string" use="required" />
+                                                    </xs:extension>
+                                                  </xs:simpleContent>
+                                                </xs:complexType>
+                                              </xs:element>
+                                              <xs:element name="maskedCardNumber" type="xs:string" />
+                                              <xs:element name="adjustmentOption">
+                                                <xs:complexType>
+                                                  <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                      <xs:attribute name="option" type="xs:string" use="required" />
+                                                    </xs:extension>
+                                                  </xs:simpleContent>
+                                                </xs:complexType>
+                                              </xs:element>
+                                              <xs:element name="transactionAmount" type="xs:decimal" />
+                                              <xs:element name="availableAmount" type="xs:decimal" />
+                                              <xs:element name="feeClassification" type="xs:string" />
+                                              <xs:element name="achCompanyName" type="xs:string" />
+                                              <xs:element name="achCompanyId" type="xs:unsignedInt" />
+                                              <xs:element name="achCompanyEntryDescription" type="xs:string" />
+                                              <xs:element name="achCompanyDescriptiveDate" type="xs:unsignedInt" />
+                                              <xs:element name="achOriginatingDFIId" type="xs:unsignedInt" />
+                                              <xs:element name="achStandardEntryClassCode" type="xs:string" />
+                                              <xs:element name="achTransactionCode" type="xs:unsignedByte" />
+                                              <xs:element name="achName" type="xs:string" />
+                                              <xs:element name="achIdentificationNumber" type="xs:unsignedShort" />
+                                              <xs:element name="achTraceNumber" type="xs:unsignedLong" />
+                                              <xs:element name="settlementDate" type="xs:date" />
+                                              <xs:element name="transferAccountNumber" type="xs:unsignedInt" />
+                                              <xs:element name="transferName" type="xs:string" />
+                                              <xs:element name="transferIdDescription" type="xs:string" />
+                                              <xs:element name="certificatePenalty" type="xs:decimal" />
+                                            </xs:choice>
+                                          </xs:sequence>
+                                          <xs:attribute name="type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="ending">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="balance" type="xs:decimal" />
+                                          </xs:sequence>
+                                          <xs:attribute name="type" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element minOccurs="0" name="dividendYTD" type="xs:decimal" />
+                                      <xs:element minOccurs="0" name="certificatePenaltyYTD" type="xs:decimal" />
+                                    </xs:sequence>
+                                    <xs:attribute name="type" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="type" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="type" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="type" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="epilogue">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="envelopeCount" type="xs:unsignedByte" />
+              <xs:element name="statementCount" type="xs:unsignedByte" />
+              <xs:element name="accountCount" type="xs:unsignedByte" />
+              <xs:element name="shareCount" type="xs:unsignedByte" />
+              <xs:element name="loanCount" type="xs:unsignedByte" />
+            </xs:sequence>
+            <xs:attribute name="type" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="type" type="xs:string" use="required" />
+      <xs:attribute name="revision" type="xs:date" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

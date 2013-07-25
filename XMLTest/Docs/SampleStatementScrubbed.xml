@@ -1,0 +1,852 @@
+<?xml version="1.0"?>
+<statementProduction type="c" xmlns="http://www.corelationinc.com/ns/statementProduction/v1.0" revision="2012-08-21">
+ <prologue type="c">
+  <institutionId>9999</institutionId>
+  <institutionName>Sample Credit Union</institutionName>
+  <databaseName>D0000LIV</databaseName>
+  <productionDate>2013-01-01</productionDate>
+  <productionTime>2012-12-31 22:28:52 CST</productionTime>
+  <statementEndingDate>2012-12-31</statementEndingDate>
+ </prologue>
+ <envelope type="a">
+  <person type="a">
+   <serial>3845327</serial>
+   <firstName>George</firstName>
+   <middleName>A</middleName>
+   <lastName>Washington</lastName>
+   <suffix>Jr</suffix>
+  </person>
+  <address type="c">
+   <addressSerial>5037296</addressSerial>
+   <category option="R">Residence</category>
+   <street>3200 Mount Vernon Memorial Hwy</street>
+   <city>Mount Vernon</city>
+   <state>VA</state>
+   <postalCode>22121</postalCode>
+  </address>
+  <statement type="a">
+   <beginningStatementDate>2012-12-01</beginningStatementDate>
+   <endingStatementDate>2012-12-31</endingStatementDate>
+   <account type="a">
+    <serial>2238420</serial>
+    <accountNumber>0000012345</accountNumber>
+    <typeSerial>3</typeSerial>
+    <typeDescription>General Membership</typeDescription>
+    <relationshipSerial>4</relationshipSerial>
+    <relationshipDescription>General Membership</relationshipDescription>
+    <eStatementOption option="B">E-statement and mail statement</eStatementOption>
+    <eStatementNotification option="Y">Yes</eStatementNotification>
+    <eStatementEmailAddress>gwash@whitehouse.gov</eStatementEmailAddress>
+    <openDate>2011-11-23</openDate>
+    <person type="a">
+     <serial>3845327</serial>
+     <personLinkCategory option="PR">Primary owner</personLinkCategory>
+     <firstName>George</firstName>
+     <middleName>A</middleName>
+     <lastName>Washington</lastName>
+     <suffix>Jr</suffix>
+    </person>
+    <subAccount type="a">
+     <share type="c">
+      <serial>3653226</serial>
+      <id>0001</id>
+      <description>Primary Saving</description>
+      <category option="S">Share</category>
+      <regDLimiting option="-">None</regDLimiting>
+      <typeSerial>3</typeSerial>
+      <typeDescription>Primary Saving</typeDescription>
+      <branchSerial>110</branchSerial>
+      <branchDescription>Main Branch</branchDescription>
+      <statementMailGroupSerial>304</statementMailGroupSerial>
+      <statementMailGroupDescription>Electronic &amp; Primary</statementMailGroupDescription>
+      <openDate>2012-11-23</openDate>
+      <person type="a">
+       <serial>3845315</serial>
+       <personLinkCategory option="JT">Joint owner</personLinkCategory>
+       <firstName>Martha</firstName>
+       <middleName>B</middleName>
+       <lastName>Washington</lastName>
+      </person>
+      <beginningStatementDate>2012-12-01</beginningStatementDate>
+      <endingStatementDate>2012-12-31</endingStatementDate>
+      <beginning type="c">
+       <balance>18025.07</balance>
+      </beginning>
+      <transaction type="a">
+       <transactionSerial>547955228</transactionSerial>
+       <monetarySerial>547955229</monetarySerial>
+       <postingDate>2012-12-04</postingDate>
+       <category option="D">Deposit</category>
+       <source option="K">Check</source>
+       <grossAmount>950.00</grossAmount>
+       <principal>950.00</principal>
+       <newBalance>18975.07</newBalance>
+      </transaction>
+      <transaction type="a">
+       <transactionSerial>570782709</transactionSerial>
+       <monetarySerial>570782721</monetarySerial>
+       <postingDate>2012-12-04</postingDate>
+       <category option="W">Withdrawal</category>
+       <grossAmount>-500.00</grossAmount>
+       <principal>-500.00</principal>
+       <newBalance>18475.07</newBalance>
+      </transaction>
+      <transaction type="a">
+       <transactionSerial>570782709</transactionSerial>
+       <monetarySerial>570782722</monetarySerial>
+       <postingDate>2012-12-04</postingDate>
+       <category option="C">Comment</category>
+       <description>Payment per member by phone</description>
+       <newBalance>18475.07</newBalance>
+      </transaction>
+      <transaction type="a">
+       <transactionSerial>550691170</transactionSerial>
+       <monetarySerial>550691173</monetarySerial>
+       <postingDate>2012-12-10</postingDate>
+       <category option="D">Deposit</category>
+       <source option="H">Home banking</source>
+       <transferOption option="T">Transfer</transferOption>
+       <description>Scheduled Recurring Transfer #DI3447DIWEST181403: Scheduled Transfer</description>
+       <grossAmount>200.00</grossAmount>
+       <principal>200.00</principal>
+       <newBalance>18675.07</newBalance>
+       <transferIdCategory>S</transferIdCategory>
+       <transferId>0007</transferId>
+      </transaction>
+      <transaction type="a">
+       <transactionSerial>551422713</transactionSerial>
+       <monetarySerial>551422714</monetarySerial>
+       <postingDate>2012-12-10</postingDate>
+       <category option="W">Withdrawal</category>
+       <source option="S">Cash</source>
+       <grossAmount>-350.00</grossAmount>
+       <principal>-350.00</principal>
+       <newBalance>18325.07</newBalance>
+      </transaction>
+      <transaction type="a">
+       <transactionSerial>564924344</transactionSerial>
+       <monetarySerial>564924345</monetarySerial>
+       <postingDate>2012-12-20</postingDate>
+       <category option="W">Withdrawal</category>
+       <source option="T">Audio</source>
+       <transferOption option="T">Transfer</transferOption>
+       <description>Ref: 650251</description>
+       <grossAmount>-2630.00</grossAmount>
+       <principal>-2630.00</principal>
+       <newBalance>15695.07</newBalance>
+       <transferIdCategory>S</transferIdCategory>
+       <transferId>0007</transferId>
+      </transaction>
+      <transaction type="a">
+       <transactionSerial>571606016</transactionSerial>
+       <monetarySerial>571606036</monetarySerial>
+       <postingDate>2012-12-31</postingDate>
+       <category option="D">Deposit</category>
+       <source option="V">Dividend</source>
+       <grossAmount>0.73</grossAmount>
+       <principal>0.73</principal>
+       <newBalance>15695.80</newBalance>
+       <apyeRate>0.050</apyeRate>
+       <apyeAverageBalance>17307.01</apyeAverageBalance>
+       <apyePeriodStartDate>2012-12-01</apyePeriodStartDate>
+       <apyePeriodEndDate>2012-12-31</apyePeriodEndDate>
+      </transaction>
+      <ending type="c">
+       <balance>15695.80</balance>
+      </ending>
+      <dividendYTD>0.80</dividendYTD>
+     </share>
+    </subAccount>
+    <subAccount type="a">
+     <share type="c">
+      <serial>3653240</serial>
+      <id>0007</id>
+      <description>Elite Checking</description>
+      <category option="D">Draft</category>
+      <regDLimiting option="-">None</regDLimiting>
+      <typeSerial>15</typeSerial>
+      <typeDescription>Elite Checking</typeDescription>
+      <branchSerial>110</branchSerial>
+      <branchDescription>Main Branch</branchDescription>
+      <statementMailGroupSerial>304</statementMailGroupSerial>
+      <statementMailGroupDescription>Electronic &amp; Primary</statementMailGroupDescription>
+      <openDate>2012-11-23</openDate>
+      <beginningStatementDate>2012-12-01</beginningStatementDate>
+      <endingStatementDate>2012-12-31</endingStatementDate>
+      <beginning type="c">
+       <balance>3236.12</balance>
+      </beginning>
+      <transaction type="a">
+       <transactionSerial>548239505</transactionSerial>
+       <monetarySerial>548239521</monetarySerial>
+       <postingDate>2012-12-04</postingDate>
+       <category option="W">Withdrawal</category>
+       <source option="D">Draft</source>
+       <grossAmount>-600.00</grossAmount>
+       <principal>-600.00</principal>
+       <newBalance>2636.12</newBalance>
+       <draftNumber>102</draftNumber>
+       <draftTracer>98720984</draftTracer>
+       <routingNumber>377777777</routingNumber>
+       <accountNumber>12345</accountNumber>
+      </transaction>
+      <transaction type="a">
+       <transactionSerial>553295545</transactionSerial>
+       <monetarySerial>553295547</monetarySerial>
+       <postingDate>2012-12-10</postingDate>
+       <category option="D">Deposit</category>
+       <source option="s">Shared branch</source>
+       <grossAmount>938.88</grossAmount>
+       <principal>938.88</principal>
+       <newBalance>3575.00</newBalance>
+       <accountNumber>1234569999999999999</accountNumber>
+       <terminalLocation>1234 MAIN ST</terminalLocation>
+       <terminalId>OU401625</terminalId>
+       <terminalCity>SPRINGFIELD</terminalCity>
+       <terminalState>VA</terminalState>
+       <merchantName>SHADY TREES FEDERAL CREDIT UN</merchantName>
+       <merchantType>6011</merchantType>
+       <transactionReference>121000008523</transactionReference>
+       <transactionDate>2012-12-10</transactionDate>
+      </transaction>
+      <transaction type="a">
+       <transactionSerial>543280695</transactionSerial>
+       <monetarySerial>543280697</monetarySerial>
+       <postingDate>2012-12-10</postingDate>
+       <category option="W">Withdrawal</category>
+       <source option="O">POS</source>
+       <subCategory option="P">Card purchase</subCategory>
+       <grossAmount>-27.06</grossAmount>
+       <principal>-27.06</principal>
+       <newBalance>3547.94</newBalance>
+       <accountNumber>5777770005551234</accountNumber>
+       <terminalLocation>RICHMOND HWY</terminalLocation>
+       <terminalId>20887101</terminalId>
+       <terminalCity>NEWINGTON</terminalCity>
+       <terminalState>VA</terminalState>
+       <merchantName>99 CENTS ONLY S</merchantName>
+       <merchantType>5411</merchantType>
+       <maskedCardNumber>XXXXXXXXXXXX1234</maskedCardNumber>
+       <transactionReference>233500094855</transactionReference>
+       <transactionDate>2012-12-08</transactionDate>
+      </transaction>
+      <transaction type="a">
+       <transactionSerial>543322886</transactionSerial>
+       <monetarySerial>543322888</monetarySerial>
+       <postingDate>2012-12-10</postingDate>
+       <category option="W">Withdrawal</category>
+       <source option="C">Credit or debit card</source>
+       <subCategory option="P">Card purchase</subCategory>
+       <grossAmount>-5.93</grossAmount>
+       <principal>-5.93</principal>
+       <newBalance>3542.01</newBalance>
+       <accountNumber>5777770005551234</accountNumber>
+       <terminalId>12345678</terminalId>
+       <terminalCity>FORT BELVOIR</terminalCity>
+       <terminalState>VA</terminalState>
+       <merchantName>CHEVRON 0200792 Q61</merchantName>
+       <merchantType>5541</merchantType>
+       <maskedCardNumber>XXXXXXXXXXXX1234</maskedCardNumber>
+       <transactionReference>233400022862</transactionReference>
+       <transactionDate>2012-12-09</transactionDate>
+      </transaction>
+      <transaction type="a">
+       <transactionSerial>550910475</transactionSerial>
+       <monetarySerial>550910477</monetarySerial>
+       <postingDate>2012-12-10</postingDate>
+       <category option="W">Withdrawal</category>
+       <source option="O">POS</source>
+       <adjustmentOption option="A">Adjustment</adjustmentOption>
+       <subCategory option="R">Card purchase return</subCategory>
+       <grossAmount>15.00</grossAmount>
+       <principal>15.00</principal>
+       <newBalance>3557.01</newBalance>
+       <accountNumber>5777770005551234</accountNumber>
+       <terminalLocation>555 Elm St</terminalLocation>
+       <terminalId>03772774</terminalId>
+       <terminalCity>Rose Hill</terminalCity>
+       <terminalState>VA</terminalState>
+       <merchantName>NWS OLD NAVY USA 832144</merchantName>
+       <merchantType>5999</merchantType>
+       <maskedCardNumber>XXXXXXXXXXXX1234</maskedCardNumber>
+       <transactionReference>234295003707</transactionReference>
+       <transactionDate>2012-12-08</transactionDate>
+      </transaction>
+      <transaction type="a">
+       <transactionSerial>550476627</transactionSerial>
+       <monetarySerial>550476754</monetarySerial>
+       <postingDate>2012-12-10</postingDate>
+       <category option="W">Withdrawal</category>
+       <source option="F">Fee</source>
+       <description>NSF Fee</description>
+       <grossAmount>-45.00</grossAmount>
+       <principal>-45.00</principal>
+       <newBalance>3512.01</newBalance>
+       <draftNumber>104</draftNumber>
+       <draftTracer>91502660</draftTracer>
+       <routingNumber>377777777</routingNumber>
+       <accountNumber>12345</accountNumber>
+       <transactionAmount>6000.00</transactionAmount>
+       <availableAmount>3542.01</availableAmount>
+       <feeClassification>RTN</feeClassification>
+      </transaction>
+      <transaction type="a">
+       <transactionSerial>550691170</transactionSerial>
+       <monetarySerial>550691171</monetarySerial>
+       <postingDate>2012-12-10</postingDate>
+       <category option="W">Withdrawal</category>
+       <source option="H">Home banking</source>
+       <transferOption option="T">Transfer</transferOption>
+       <description>Scheduled Recurring Transfer #DI3447DIWEST181403: Scheduled Transfer</description>
+       <grossAmount>-200.00</grossAmount>
+       <principal>-200.00</principal>
+       <newBalance>3312.01</newBalance>
+       <transferIdCategory>S</transferIdCategory>
+       <transferId>0001</transferId>
+      </transaction>
+      <transaction type="a">
+       <transactionSerial>564538396</transactionSerial>
+       <monetarySerial>564538398</monetarySerial>
+       <postingDate>2012-12-12</postingDate>
+       <category option="W">Withdrawal</category>
+       <source option="A">ATM</source>
+       <grossAmount>-83.00</grossAmount>
+       <principal>-83.00</principal>
+       <newBalance>3229.01</newBalance>
+       <accountNumber>5777770005551234</accountNumber>
+       <terminalLocation>4200 OAK ST - STE 1</terminalLocation>
+       <terminalId>N30A</terminalId>
+       <terminalCity>RICHMOND</terminalCity>
+       <terminalState>VA</terminalState>
+       <merchantName>SECOND NATIONAL BANK</merchantName>
+       <merchantType>6011</merchantType>
+       <maskedCardNumber>XXXXXXXXXXXX1234</maskedCardNumber>
+       <transactionReference>235700006639</transactionReference>
+       <transactionDate>2012-12-10</transactionDate>
+      </transaction>
+      <transaction type="a">
+       <transactionSerial>564538396</transactionSerial>
+       <monetarySerial>564538408</monetarySerial>
+       <postingDate>2012-12-12</postingDate>
+       <category option="W">Withdrawal</category>
+       <source option="F">Fee</source>
+       <description>Foreign ATM Transaction Fee</description>
+       <grossAmount>-2.00</grossAmount>
+       <principal>-2.00</principal>
+       <newBalance>3227.01</newBalance>
+       <terminalLocation>4200 OAK ST - STE 1</terminalLocation>
+       <terminalId>N30A</terminalId>
+       <terminalCity>RICHMOND</terminalCity>
+       <terminalState>VA</terminalState>
+       <merchantName>SECOND NATIONAL BANK</merchantName>
+      </transaction>
+      <transaction type="a">
+       <transactionSerial>548435842</transactionSerial>
+       <monetarySerial>548435844</monetarySerial>
+       <postingDate>2012-12-15</postingDate>
+       <category option="D">Deposit</category>
+       <source option="a">ACH</source>
+       <grossAmount>1856.23</grossAmount>
+       <principal>1856.23</principal>
+       <newBalance>5083.24</newBalance>
+       <routingNumber>377777777</routingNumber>
+       <accountNumber>12345</accountNumber>
+       <achCompanyName>VIRGINIA ISD</achCompanyName>
+       <achCompanyId>1235577889</achCompanyId>
+       <achCompanyEntryDescription>DIR DEP</achCompanyEntryDescription>
+       <achCompanyDescriptiveDate>121125</achCompanyDescriptiveDate>
+       <achOriginatingDFIId>12300123</achOriginatingDFIId>
+       <achStandardEntryClassCode>PPD</achStandardEntryClassCode>
+       <achTransactionCode>22</achTransactionCode>
+       <achName>WASHINGTON,GEORGE A</achName>
+       <achIdentificationNumber>01777</achIdentificationNumber>
+       <achTraceNumber>021000020224363</achTraceNumber>
+       <settlementDate>2012-12-15</settlementDate>
+      </transaction>
+      <transaction type="a">
+       <transactionSerial>549316857</transactionSerial>
+       <monetarySerial>549316858</monetarySerial>
+       <postingDate>2012-12-15</postingDate>
+       <category option="W">Withdrawal</category>
+       <transferOption option="T">Transfer</transferOption>
+       <grossAmount>-418.76</grossAmount>
+       <principal>-418.76</principal>
+       <newBalance>4664.48</newBalance>
+        <transferAccountNumber>0020191800</transferAccountNumber>
+       <transferName>Thomas Jefferson</transferName>
+       <transferIdCategory>L</transferIdCategory>
+       <transferId>0160</transferId>
+      </transaction>
+      <transaction type="a">
+       <transactionSerial>558446209</transactionSerial>
+       <monetarySerial>558446210</monetarySerial>
+       <postingDate>2012-12-16</postingDate>
+       <category option="W">Withdrawal</category>
+       <source option="H">Home banking</source>
+       <transferOption option="T">Transfer</transferOption>
+       <description>Ref: 642631</description>
+       <grossAmount>-1000.00</grossAmount>
+       <principal>-1000.00</principal>
+       <newBalance>3664.48</newBalance>
+       <transferIdCategory>L</transferIdCategory>
+       <transferId>0205</transferId>
+       <transferIdDescription>Credit Card</transferIdDescription>
+      </transaction>
+      <transaction type="a">
+       <transactionSerial>564924344</transactionSerial>
+       <monetarySerial>564924347</monetarySerial>
+       <postingDate>2012-12-20</postingDate>
+       <category option="D">Deposit</category>
+       <source option="H">Home banking</source>
+       <transferOption option="T">Transfer</transferOption>
+       <description>Ref: 650251</description>
+       <grossAmount>2630.00</grossAmount>
+       <principal>2630.00</principal>
+       <newBalance>6294.48</newBalance>
+       <transferIdCategory>S</transferIdCategory>
+       <transferId>0001</transferId>
+      </transaction>
+      <transaction type="a">
+       <transactionSerial>571606726</transactionSerial>
+       <monetarySerial>571606749</monetarySerial>
+       <postingDate>2012-12-31</postingDate>
+       <category option="D">Deposit</category>
+       <source option="V">Dividend</source>
+       <grossAmount>0.19</grossAmount>
+       <principal>0.19</principal>
+       <newBalance>6294.67</newBalance>
+       <apyeRate>0.050</apyeRate>
+       <apyeAverageBalance>4458.77</apyeAverageBalance>
+       <apyePeriodStartDate>2012-12-01</apyePeriodStartDate>
+       <apyePeriodEndDate>2012-12-31</apyePeriodEndDate>
+      </transaction>
+      <ending type="c">
+       <balance>6294.67</balance>
+      </ending>
+      <dividendYTD>0.23</dividendYTD>
+     </share>
+    </subAccount>
+    <subAccount type="a">
+     <share type="c">
+      <serial>3653249</serial>
+      <id>0012</id>
+      <description>Holiday Saving</description>
+      <category option="B">Club</category>
+      <regDLimiting option="L">Limit</regDLimiting>
+      <typeSerial>7</typeSerial>
+      <typeDescription>Holiday Saving</typeDescription>
+      <branchSerial>110</branchSerial>
+      <branchDescription>Main Branch</branchDescription>
+      <statementMailGroupSerial>304</statementMailGroupSerial>
+      <statementMailGroupDescription>Electronic &amp; Primary</statementMailGroupDescription>
+      <openDate>2012-11-23</openDate>
+      <maturityDate>2013-11-01</maturityDate>
+      <beginningStatementDate>2012-12-01</beginningStatementDate>
+      <endingStatementDate>2012-12-31</endingStatementDate>
+      <beginning type="c">
+       <balance>25.00</balance>
+      </beginning>
+      <ending type="c">
+       <balance>25.00</balance>
+      </ending>
+     </share>
+    </subAccount>
+    <subAccount type="a">
+     <share type="c">
+      <serial>3653263</serial>
+      <id>0013</id>
+      <description>12 Month Certificate</description>
+      <category option="C">Certificate</category>
+      <regDLimiting option="L">Limit</regDLimiting>
+      <typeSerial>32</typeSerial>
+      <typeDescription>12 Month Certificate</typeDescription>
+      <branchSerial>110</branchSerial>
+      <branchDescription>Main Branch</branchDescription>
+      <statementMailGroupSerial>304</statementMailGroupSerial>
+      <statementMailGroupDescription>Electronic &amp; Primary</statementMailGroupDescription>
+      <openDate>2012-08-02</openDate>
+      <maturityDate>2013-08-02</maturityDate>
+      <beginningStatementDate>2012-10-01</beginningStatementDate>
+      <endingStatementDate>2012-12-31</endingStatementDate>
+      <beginning type="c">
+       <balance>30036.99</balance>
+      </beginning>
+      <transaction type="a">
+       <transactionSerial>571607414</transactionSerial>
+       <monetarySerial>571607427</monetarySerial>
+       <postingDate>2012-10-31</postingDate>
+       <category option="D">Deposit</category>
+       <source option="V">Dividend</source>
+       <grossAmount>19.13</grossAmount>
+       <principal>19.13</principal>
+       <newBalance>30056.12</newBalance>
+       <apyeRate>0.750</apyeRate>
+       <apyeAverageBalance>30036.99</apyeAverageBalance>
+       <apyePeriodStartDate>2012-10-01</apyePeriodStartDate>
+       <apyePeriodEndDate>2012-10-31</apyePeriodEndDate>
+      </transaction>	
+      <transaction type="a">
+       <transactionSerial>571607516</transactionSerial>
+       <monetarySerial>571607427</monetarySerial>
+       <postingDate>2012-11-30</postingDate>
+       <category option="D">Deposit</category>
+       <source option="V">Dividend</source>
+       <grossAmount>18.53</grossAmount>
+       <principal>18.53</principal>
+       <newBalance>30074.65</newBalance>
+       <apyeRate>0.750</apyeRate>
+       <apyeAverageBalance>30056.12</apyeAverageBalance>
+       <apyePeriodStartDate>2012-11-01</apyePeriodStartDate>
+       <apyePeriodEndDate>2012-11-30</apyePeriodEndDate>
+      </transaction>	
+      <transaction type="a">
+       <transactionSerial>571607678</transactionSerial>
+       <monetarySerial>571607427</monetarySerial>
+       <postingDate>2012-12-31</postingDate>
+       <category option="D">Deposit</category>
+       <source option="V">Dividend</source>
+       <grossAmount>19.16</grossAmount>
+       <principal>19.16</principal>
+       <newBalance>30093.81</newBalance>
+       <apyeRate>0.750</apyeRate>
+       <apyeAverageBalance>30074.65</apyeAverageBalance>
+       <apyePeriodStartDate>2012-12-01</apyePeriodStartDate>
+       <apyePeriodEndDate>2012-12-31</apyePeriodEndDate>
+      </transaction>
+      <ending type="c">
+       <balance>30093.81</balance>
+      </ending>
+      <dividendYTD>214.07</dividendYTD>
+     </share>
+    </subAccount>
+    <subAccount type="a">
+     <share type="c">
+      <serial>3671692</serial>
+      <id>0018</id>
+      <description>60 Mo Certificate</description>
+      <category option="C">Certificate</category>
+      <regDLimiting option="L">Limit</regDLimiting>
+      <typeSerial>35</typeSerial>
+      <typeDescription>60 Month Certificate</typeDescription>
+      <branchSerial>110</branchSerial>
+      <branchDescription>Main Branch</branchDescription>
+      <statementMailGroupSerial>304</statementMailGroupSerial>
+      <statementMailGroupDescription>Electronic &amp; Primary</statementMailGroupDescription>
+      <openDate>2012-01-11</openDate>
+      <closeDate>2012-12-05</closeDate>
+      <maturityDate>2017-01-11</maturityDate>
+      <beginningStatementDate>2012-12-01</beginningStatementDate>
+      <endingStatementDate>2012-12-31</endingStatementDate>
+      <beginning type="c">
+       <balance>10180.68</balance>
+      </beginning>
+      <transaction type="a">
+       <transactionSerial>549080809</transactionSerial>
+       <monetarySerial>549080811</monetarySerial>
+       <postingDate>2012-12-05</postingDate>
+       <category option="W">Withdrawal</category>
+       <source option="S">Cash</source>
+       <grossAmount>-10180.68</grossAmount>
+       <principal>-10180.68</principal>
+       <newBalance>0.00</newBalance>
+       <transactionAmount>10180.68</transactionAmount>
+       <availableAmount>9680.68</availableAmount>
+       <certificatePenalty>122.79</certificatePenalty>
+      </transaction>
+      <ending type="c">
+       <balance>0.00</balance>
+      </ending>
+      <dividendYTD>180.68</dividendYTD>
+      <certificatePenaltyYTD>122.79</certificatePenaltyYTD>
+     </share>
+    </subAccount>
+    <subAccount type="a">
+     <loan type="c">
+      <serial>1830777</serial>
+      <id>0205</id>
+      <description>Savings Secured</description>
+      <category option="CE">Closed end</category>
+      <typeSerial>13</typeSerial>
+      <typeDescription>Savings Secured</typeDescription>
+      <branchSerial>111</branchSerial>
+      <branchDescription>Hwy 295 Branch</branchDescription>
+      <statementMailGroupSerial>304</statementMailGroupSerial>
+      <statementMailGroupDescription>Electronic &amp; Primary</statementMailGroupDescription>
+      <openDate>2012-08-23</openDate>
+      <maturityDate>2013-08-29</maturityDate>
+      <statementFormat option="CE">Closed end</statementFormat>
+      <balanceComputationMethod option="D">Daily</balanceComputationMethod>
+      <beginningStatementDate>2012-12-01</beginningStatementDate>
+      <endingStatementDate>2012-12-31</endingStatementDate>
+      <beginning type="c">
+       <balance>8150.00</balance>
+       <annualRate>3.550</annualRate>
+       <dailyPeriodicRate>0.009726</dailyPeriodicRate>
+       <variableRateOption option="F">Fixed</variableRateOption>
+      </beginning>
+      <transaction type="a">
+       <transactionSerial>547194557</transactionSerial>
+       <monetarySerial>547194584</monetarySerial>
+       <postingDate>2012-12-04</postingDate>
+       <category option="C">Comment</category>
+       <description>Delinquency Notice Sent</description>
+       <newBalance>8150.00</newBalance>
+      </transaction>
+      <transaction type="a">
+       <transactionSerial>558446209</transactionSerial>
+       <monetarySerial>558446211</monetarySerial>
+       <postingDate>2012-12-15</postingDate>
+       <category option="P">Payment</category>
+       <transferOption option="T">Transfer</transferOption>
+       <grossAmount>-1000.00</grossAmount>
+       <principal>-936.35</principal>
+       <interest>51.52</interest>
+       <lateFee>12.13</lateFee>
+       <newBalance>7213.65</newBalance>
+       <transferIdCategory>S</transferIdCategory>
+       <transferId>0001</transferId>
+      </transaction>
+      <transaction type="a">
+       <transactionSerial>571268392</transactionSerial>
+       <monetarySerial>571268396</monetarySerial>
+       <postingDate>2012-12-31</postingDate>
+       <category option="A">Advance</category>
+       <source option="I">Insurance</source>
+       <description>Joint Credit Life Protection Premium</description>
+       <grossAmount>7.21</grossAmount>
+       <principal>7.21</principal>
+       <newBalance>7220.86</newBalance>
+      </transaction>
+      <ending type="c">
+       <balance>7220.86</balance>
+       <annualRate>3.550</annualRate>
+       <dailyPeriodicRate>0.009726</dailyPeriodicRate>
+       <variableRateOption option="F">Fixed</variableRateOption>
+      </ending>
+      <interestChargedPeriod>51.52</interestChargedPeriod>
+      <interestChargedYTD>315.55</interestChargedYTD>
+      <loanFeesChargedPeriod>7.21</loanFeesChargedPeriod>
+      <loanFeesChargedYTD>7.21</loanFeesChargedYTD>
+      <interestYTD>315.55</interestYTD>
+      <endingDueDate>2013-01-29</endingDueDate>
+      <endingDuePayment>840.00</endingDuePayment>
+      <nextScheduledDueDate>2013-01-29</nextScheduledDueDate>
+      <nextScheduledDuePayment>840.00</nextScheduledDuePayment>
+      <nextScheduledDueInterest>31.60</nextScheduledDueInterest>
+      <nextScheduledDuePayoff>7252.46</nextScheduledDuePayoff>
+      <nextScheduledStandardPayment>840.00</nextScheduledStandardPayment>
+      <daysInBillingCycle>31</daysInBillingCycle>
+     </loan>
+    </subAccount>
+   </account>
+  </statement>
+ </envelope>
+ <envelope type="a">
+  <person type="a">
+   <serial>38488</serial>
+   <lastName>Gigunda Corporation</lastName>
+  </person>
+  <address type="c">
+   <addressSerial>5037288</addressSerial>
+   <category option="R">Business</category>
+   <street>500 Hwy of the Stars</street>
+   <city>Los Angeles</city>
+   <state>CA</state>
+  </address>
+  <statement type="a">
+   <beginningStatementDate>2012-12-01</beginningStatementDate>
+   <endingStatementDate>2012-12-31</endingStatementDate>
+   <account type="a">
+    <serial>2238888</serial>
+    <accountNumber>0000088776</accountNumber>
+    <typeSerial>3</typeSerial>
+    <typeDescription>General Membership</typeDescription>
+    <relationshipSerial>4</relationshipSerial>
+    <relationshipDescription>General Membership</relationshipDescription>
+    <eStatementOption option="B">E-statement and mail statement</eStatementOption>
+    <eStatementNotification option="Y">Yes</eStatementNotification>
+    <eStatementEmailAddress>pres@gigunda.net</eStatementEmailAddress>
+    <openDate>2008-02-14</openDate>
+    <person type="a">
+     <serial>3845553</serial>
+     <personLinkCategory option="PR">Primary owner</personLinkCategory>
+     <lastName>Gigunda Corporation</lastName>
+    </person>
+    <subAccount type="a">
+     <share type="c">
+      <serial>3653333</serial>
+      <id>0001</id>
+      <description>Primary Saving</description>
+      <category option="S">Share</category>
+      <regDLimiting option="-">None</regDLimiting>
+      <typeSerial>3</typeSerial>
+      <typeDescription>Primary Saving</typeDescription>
+      <branchSerial>110</branchSerial>
+      <branchDescription>Main Branch</branchDescription>
+      <statementMailGroupSerial>304</statementMailGroupSerial>
+      <statementMailGroupDescription>Electronic &amp; Primary</statementMailGroupDescription>
+      <openDate>2010-10-23</openDate>
+      <beginningStatementDate>2012-12-01</beginningStatementDate>
+      <endingStatementDate>2012-12-31</endingStatementDate>
+      <beginning type="c">
+       <balance>5070.07</balance>
+      </beginning>
+      <ending type="c">
+       <balance>5070.07</balance>
+      </ending>
+      <dividendYTD>3.80</dividendYTD>
+     </share>
+    </subAccount>
+    <subAccount type="a">
+     <loan type="c">
+      <serial>1825501</serial>
+      <id>0150</id>
+      <description>Used Auto - Indirect</description>
+      <category option="CE">Closed end</category>
+      <typeSerial>110</typeSerial>
+      <typeDescription>Used Auto - Indirect</typeDescription>
+      <branchSerial>110</branchSerial>
+      <branchDescription>Main Branch</branchDescription>
+      <statementMailGroupSerial>304</statementMailGroupSerial>
+      <statementMailGroupDescription>Electronic &amp; Primary</statementMailGroupDescription>
+      <openDate>2010-05-22</openDate>
+      <maturityDate>2015-12-06</maturityDate>
+      <statementFormat option="CE">Closed end</statementFormat>
+      <balanceComputationMethod option="D">Daily</balanceComputationMethod>
+      <beginningStatementDate>2012-12-02</beginningStatementDate>
+      <endingStatementDate>2012-12-31</endingStatementDate>
+      <beginning type="c">
+       <balance>9271.27</balance>
+       <annualRate>10.140</annualRate>
+       <dailyPeriodicRate>0.027781</dailyPeriodicRate>
+       <variableRateOption option="F">Fixed</variableRateOption>
+      </beginning>
+      <transaction type="a">
+       <transactionSerial>553644400</transactionSerial>
+       <monetarySerial>553644422</monetarySerial>
+       <postingDate>2012-12-11</postingDate>
+       <category option="C">Comment</category>
+       <description>Delinquency Notice Sent</description>
+       <newBalance>9271.27</newBalance>
+      </transaction>
+      <ending type="c">
+       <balance>9271.27</balance>
+       <annualRate>10.140</annualRate>
+       <dailyPeriodicRate>0.027781</dailyPeriodicRate>
+       <variableRateOption option="F">Fixed</variableRateOption>
+      </ending>
+      <interestChargedYTD>1054.74</interestChargedYTD>
+      <interestChargedLastYear>1156.17</interestChargedLastYear>
+      <loanFeesChargedYTD>101.99</loanFeesChargedYTD>
+      <interestYTD>1054.74</interestYTD>
+      <interestLastYear>1156.17</interestLastYear>
+      <endingDueDate>2012-12-06</endingDueDate>
+      <endingDuePayment>291.38</endingDuePayment>
+      <pastDueDate>2012-12-06</pastDueDate>
+      <pastDuePayment>291.38</pastDuePayment>
+      <pastDuePaymentCount>1</pastDuePaymentCount>
+      <nextScheduledDueDate>2013-01-06</nextScheduledDueDate>
+      <nextScheduledDuePayment>582.76</nextScheduledDuePayment>
+      <nextScheduledDueInterest>172.57</nextScheduledDueInterest>
+      <nextScheduledDueLateFee>14.57</nextScheduledDueLateFee>
+      <nextScheduledDuePayoff>9458.41</nextScheduledDuePayoff>
+      <nextScheduledStandardPayment>291.38</nextScheduledStandardPayment>
+      <daysInBillingCycle>30</daysInBillingCycle>
+     </loan>
+    </subAccount>
+    <subAccount type="a">
+     <loan type="c">
+      <serial>1777554</serial>
+      <id>0156</id>
+      <description>In House Credit Cards</description>
+      <category option="LC">Line of credit</category>
+      <typeSerial>16</typeSerial>
+      <typeDescription>In House Credit Cards</typeDescription>
+      <branchSerial>110</branchSerial>
+      <branchDescription>Main Branch</branchDescription>
+      <statementMailGroupSerial>304</statementMailGroupSerial>
+      <statementMailGroupDescription>Electronic &amp; Primary</statementMailGroupDescription>
+      <openDate>2012-11-15</openDate>
+      <statementFormat option="OE">Open end</statementFormat>
+      <balanceComputationMethod option="D">Daily</balanceComputationMethod>
+      <beginningStatementDate>2012-12-02</beginningStatementDate>
+      <endingStatementDate>2012-12-31</endingStatementDate>
+      <beginning type="c">
+       <balance>6857.02</balance>
+       <annualRate>8.500</annualRate>
+       <dailyPeriodicRate>0.023288</dailyPeriodicRate>
+       <variableRateOption option="V">Variable</variableRateOption>
+      </beginning>
+      <transaction type="a">
+       <transactionSerial>543904226</transactionSerial>
+       <monetarySerial>543904509</monetarySerial>
+       <postingDate>2012-12-03</postingDate>
+       <category option="C">Comment</category>
+       <description>Delinquency Notice Sent</description>
+       <newBalance>6857.02</newBalance>
+      </transaction>
+      <transaction type="a">
+       <transactionSerial>567942410</transactionSerial>
+       <monetarySerial>567942411</monetarySerial>
+       <postingDate>2012-12-27</postingDate>
+       <category option="P">Payment</category>
+       <source option="K">Check</source>
+       <grossAmount>-50.00</grossAmount>
+       <interest>25.01</interest>
+       <lateFee>24.99</lateFee>
+       <newBalance>6857.02</newBalance>
+      </transaction>
+      <feeTransaction type="a">
+       <openEndLoanFeeIndicator option="Y">Yes</openEndLoanFeeIndicator>
+       <transactionSerial>567942410</transactionSerial>
+       <monetarySerial>567942411</monetarySerial>
+       <postingDate>2012-12-27</postingDate>
+       <category option="A">Advance</category>
+       <source option="F">Fee</source>
+       <description>Late Fee</description>
+       <grossAmount>24.99</grossAmount>
+       <lateFee>24.99</lateFee>
+       <newBalance>6857.02</newBalance>
+      </feeTransaction>
+      <interestCharge type="a">
+       <transactionSerial>567942410</transactionSerial>
+       <monetarySerial>567942411</monetarySerial>
+       <postingDate>2012-12-27</postingDate>
+       <interest>25.01</interest>
+      </interestCharge>
+      <ending type="c">
+       <balance>6857.02</balance>
+       <annualRate>8.500</annualRate>
+       <dailyPeriodicRate>0.023288</dailyPeriodicRate>
+       <variableRateOption option="V">Variable</variableRateOption>
+      </ending>
+      <interestChargedPeriod>25.01</interestChargedPeriod>
+      <interestChargedYTD>25.01</interestChargedYTD>
+      <loanFeesChargedPeriod>24.99</loanFeesChargedPeriod>
+      <loanFeesChargedYTD>24.99</loanFeesChargedYTD>
+      <interestYTD>25.01</interestYTD>
+      <endingDueDate>2012-09-20</endingDueDate>
+      <endingDuePayment>172.45</endingDuePayment>
+      <endingDuePaymentPartialApplied>50.00</endingDuePaymentPartialApplied>
+      <pastDueDate>2012-12-20</pastDueDate>
+      <pastDuePayment>655.65</pastDuePayment>
+      <pastDuePaymentCount>4</pastDuePaymentCount>
+      <nextScheduledDueDate>2013-01-20</nextScheduledDueDate>
+      <nextScheduledDuePayment>861.36</nextScheduledDuePayment>
+      <nextScheduledDueInterest>80.38</nextScheduledDueInterest>
+      <nextScheduledDuePayoff>6937.40</nextScheduledDuePayoff>
+      <nextScheduledStandardPayment>205.71</nextScheduledStandardPayment>
+      <daysInBillingCycle>30</daysInBillingCycle>
+     </loan>
+    </subAccount>
+   </account>
+  </statement>
+ </envelope>
+ <epilogue type="c">
+  <envelopeCount>2</envelopeCount>
+  <statementCount>2</statementCount>
+  <accountCount>2</accountCount>
+  <shareCount>6</shareCount>
+  <loanCount>3</loanCount>
+ </epilogue>
+</statementProduction>
